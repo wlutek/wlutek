@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/lukaszjurys/www/wojtek/app/config/routing_dev.yml

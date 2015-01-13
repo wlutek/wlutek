@@ -1,0 +1,18 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block content %}
+    <section id="content-box">
+        <h1>News</h1>
+
+        <div class="content">
+            {% if news is not empty %}
+                {% for n in news %}
+                    <p>{{ n.content|slice(0, 100) }}<br/><small>{{ n.createdAt|date }}</small>
+                    <a href="{{ path('app_news_details',{id:n.id}) }}">See more</a>
+                    </p>
+                {% endfor %}
+                {#</p> błąd składni! przeniosłem wyżej #}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
