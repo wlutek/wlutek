@@ -1,4 +1,4 @@
-# recruitment-sf2
+recruitment-sf2
 
  dodanie do bazy nowego pola: wpisanie w konsoli: app/console doctrine:schema:update --force
 
